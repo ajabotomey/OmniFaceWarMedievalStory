@@ -8,10 +8,17 @@ jobs:
     strategy:
       fail-fast: false
     steps:
+      - uses: actions/checkout@v2
+
+      - uses: papeloto/action-zip@v1
+        with: 
+          files: index.html
+          dest: index.zip
+
       - uses: josephbmanley/butler-publish-itchio-action@master
         env:
           BUTLER_CREDENTIALS: ${{ secrets.BUTLER_CREDENTIALS }}
           CHANNEL: windows
           ITCH_GAME: the-omniface-war-medieval-level
           ITCH_USER: killerbyte
-          PACKAGE: /
+          PACKAGE: index.zip

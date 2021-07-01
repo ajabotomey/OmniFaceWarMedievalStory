@@ -1,0 +1,11 @@
+name: Publish Story on Itch.io
+on: [push, pull_request]
+
+steps:
+  - uses: josephbmanley/butler-publish-itchio-action@master
+    env:
+      BUTLER_CREDENTIALS: ${{ secrets.BUTLER_CREDENTIALS }}
+      CHANNEL: windows
+      ITCH_GAME: the-omniface-war-medieval-level
+      ITCH_USER: killerbyte
+      PACKAGE: /

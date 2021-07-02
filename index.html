@@ -95,7 +95,7 @@ That&#39;s enough information to work with
 
 [[Head back to the center of the Tavern]]</tw-passagedata><tw-passagedata pid="16" name="Head back to the center of the Tavern" tags="" position="8718,1136" size="100,100">(if: $serfs is true and $soldiers is true and $parishoners is true)[
 Ok, now I have all of the information I need to bring down the lords.
-[[Leave the Tavern]]
+[[Go back to the Town Square]]
 ]
 (else:)[
 Where to move to next?
@@ -103,7 +103,7 @@ Where to move to next?
 [[Head towards the serfs]]
 [[Head towards the soldiers]]
 [[Head towards the parishoners]]
-]</tw-passagedata><tw-passagedata pid="17" name="Leave the Tavern" tags="" position="8718,1302" size="100,100">Now that we have all the information we need, it&#39;s time to start taking down the lords.
+]</tw-passagedata><tw-passagedata pid="17" name="Go back to the Town Square" tags="" position="8718,1302" size="100,100">Now that we have all the information we need, it&#39;s time to start taking down the lords.
 
 (if: $winery is false)[ [[Head for the Winery]] ]
 (if: $barracks is false)[ [[Head for the Barracks]] ]
@@ -479,7 +479,7 @@ Thankfully, this area is already cleared out.
 As you descend down the stairs, you notice the serfs in various points of cover, just waiting for a signal to attack.
 
 [[Second Floor]]
-]</tw-passagedata><tw-passagedata pid="140" name="Quickly hide as the Queen arrives" tags="" position="2534,4022" size="100,100">The Queen emerges from her carriage with the Lord Vintner and the winery is a mess. A scowl forms on her face and the Lord Vintner starts to quiver in fear. As the royal entourage wals inside the winery, the sight of the destruction kicks in and the Queen realises someone has messed with her winery.
+]</tw-passagedata><tw-passagedata pid="140" name="Quickly hide as the Queen arrives" tags="" position="2822,4310" size="100,100">The Queen emerges from her carriage with the Lord Vintner and the winery is a mess. A scowl forms on her face and the Lord Vintner starts to quiver in fear. As the royal entourage wals inside the winery, the sight of the destruction kicks in and the Queen realises someone has messed with her winery.
 The Queen: (through gritted teeth) //Seize him//
 
 [[Continue watching on]]</tw-passagedata><tw-passagedata pid="141" name="Second Floor" tags="" position="941,2850" size="100,100">(if: $thirdFloor is true) [
@@ -543,7 +543,7 @@ You: //That was some pretty lazy writing there. Ninjas? In a medieval setting?//
 
 [[Take out the guards one by one]]
 [[Start a firefight with the guards]]
-[[Distract the guards]] ]</tw-passagedata><tw-passagedata pid="150" name="Continue watching on" tags="" position="2534,4172" size="100,100">The guards seize the Lord Vintner and immediately drag him before the Queen. 
+[[Distract the guards]] ]</tw-passagedata><tw-passagedata pid="150" name="Continue watching on" tags="" position="3678,4672" size="100,100">The guards seize the Lord Vintner and immediately drag him before the Queen. 
 Lord Vintner: //Please your majesty, I can explain//
 Queen: //No, Lord Vintner. The serfs are missing and the guards are a mess.// 
 A guard approaches the Queen with the voicemaker. 
@@ -551,21 +551,23 @@ Guard: //Your majesty! This was found nearby.//
 The guard pushes the button and a loud &quot;HAPPY BIRTHDAY TO YOU&quot; rings through the winery and the Queen&#39;s face turns blood red into a pure rage. She summons some of her power into the palm of her hand and launches it into the guard&#39;s face.
 Queen: //IT&#39;S NOT MY GODDAMN BIRTHDAY!!!//
 
-[[Watch the Lord Vintner]]</tw-passagedata><tw-passagedata pid="151" name="Watch the Lord Vintner" tags="" position="2534,4322" size="100,100">The Lord Vintner now squrims because he knows he&#39;s next. The Queen starts to cry like she is in a lot of pain.
+[[Watch the Lord Vintner]]</tw-passagedata><tw-passagedata pid="151" name="Watch the Lord Vintner" tags="" position="3678,4822" size="100,100">The Lord Vintner now squrims because he knows he&#39;s next. The Queen starts to cry like she is in a lot of pain.
 Queen: //YOU LET SOMEONE DESTROY ALL OF MY WINE!! MY PRECIOUS WINE!!//
 Lord Vintner: //I will find the person responsible for this.//
 Queen: //NO! YOUR INCOMPETENCE HAS DONE ENOUGH!!//
 The Queen starts summoning energy into all of her fingers and fires them into the Lord Vintner, piercing through him as the life leaves his eyes. 
 Deep down, you get a little scared because she will be quite a painful fight.
 
-[[Wait for the Queen to leave]]</tw-passagedata><tw-passagedata pid="152" name="Wait for the Queen to leave" tags="" position="2534,4473" size="100,100">Queen: Is there any salvagable barrels of my precious wine?
+[[Wait for the Queen to leave]]</tw-passagedata><tw-passagedata pid="152" name="Wait for the Queen to leave" tags="" position="3678,4973" size="100,100">Queen: Is there any salvagable barrels of my precious wine?
 Guard: Yes, your majesty.
 Queen: Bring them to the carriage, we will take them to the castle so they cannot be sabotaged.
 Guard: Your will be done!
 The Queen, still shaking with rage, takes her leave with her guards in close proximity. You see your chance to leave out a back door when you see a blazing fire. Looks like the serfs decided to get the last laugh by burning the vineyard. 
 
-[[Look at the Queen]]</tw-passagedata><tw-passagedata pid="153" name="Look at the Queen" tags="" position="2534,4619" size="100,100">(set: $winery is true) You look over at the Queen and she is dumbstruck. She looks like she is ready to cry and have a fit as her precious vineyard goes up in flames. You manage to run through the flames to the main road.
-You: //Who destroyed the winery?//</tw-passagedata><tw-passagedata pid="154" name="Circle the building." tags="" position="8579,1661" size="100,100">As you circle the building, you notice the guard tower that oversees the entire kingdom. Dealing with this tower would do significant damage to the Lord General&#39;s reputation. You continue walking around and you notice a large crack in the wall that you can just fit inside to sneak your way in.
+[[Look at the Queen]]</tw-passagedata><tw-passagedata pid="153" name="Look at the Queen" tags="" position="6290,5295" size="100,100">(set: $winery is true) You look over at the Queen and she is dumbstruck. She looks like she is ready to cry and have a fit as her precious vineyard goes up in flames. You manage to run through the flames to the main road.
+You: //Who destroyed the winery?//
+
+[[Go back to the Town Square]] </tw-passagedata><tw-passagedata pid="154" name="Circle the building." tags="" position="8579,1661" size="100,100">As you circle the building, you notice the guard tower that oversees the entire kingdom. Dealing with this tower would do significant damage to the Lord General&#39;s reputation. You continue walking around and you notice a large crack in the wall that you can just fit inside to sneak your way in.
 
 [[Enter through the crack]]</tw-passagedata><tw-passagedata pid="155" name="Take out the guards at the entrance." tags="" position="8729,1657" size="100,100">Thankfully there is no citizens around to witness your assault on the entrance guards. As they charge at you with their Omni-Pike, you swiftly fire at their SmartFace Masks and disintegrate them. The guards are immediately blinded by the sunlight and crawl into the fetal position. 
 
@@ -588,7 +590,15 @@ There are a few doors on this floor and a staircase that goes to another floor. 
 [[Move to the next floor]]
 [[Go through the first door]]
 [[Go through the second door]]
-[[Go through the third door]]</tw-passagedata><tw-passagedata pid="163" name="Move to the next floor" tags="" position="8985,2098" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="164" name="Go through the first door" tags="" position="9127,2099" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="165" name="Go through the second door" tags="" position="9260,2100" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="166" name="Go through the third door" tags="" position="9396,2099" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="167" name="Let loose the horses" tags="" position="8724,2100" size="100,100">(set: $stables to true)You go to the first horse, open the gate and untie the ropes binding him to his enclosure. Once the horse is unbound, it bolts straight for the gate and runs off for its freedom. Now the other horses get excited and you quickly free up the other horses. Footsteps are heard and you quickly hide, a bunch of guards burst out of the barracks. Looks like they noticed the horses making a run for it. </tw-passagedata></tw-storydata>
+[[Go through the third door]]</tw-passagedata><tw-passagedata pid="163" name="Move to the next floor" tags="" position="8879,2102" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="164" name="Go through the first door" tags="" position="9253,2101" size="100,100">You go through the first door and the sight of what&#39;s inside, stuns you momentarily. You see a factory that is creating many of the arms used by the Queensguard, the Smart-Pike and the Intelli-Bow. There are a few blacksmiths around melding the technology with medieval blacksmithing but strangely, no guards. 
+
+You could eliminate the blacksmiths so they stay out of your way but you will attract some guards. You could destroy the conveyor belt and cause a significant delay. Also, you could destroy the weapons that have already been built to further cause heckery.
+
+[[Make your way to the base of the conveyor belt]]
+[[Take out the blacksmiths]]
+[[Destroy the weapons cache]]</tw-passagedata><tw-passagedata pid="165" name="Go through the second door" tags="" position="9784,2101" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="166" name="Go through the third door" tags="" position="9559,2104" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="167" name="Let loose the horses" tags="" position="8724,2100" size="100,100">(set: $stables to true)You go to the first horse, open the gate and untie the ropes binding him to his enclosure. Once the horse is unbound, it bolts straight for the gate and runs off for its freedom. 
+
+Now the other horses get excited and you quickly free up the other horses. Footsteps are heard and you quickly hide, a bunch of guards burst out of the barracks. Looks like they noticed the horses making a run for it. </tw-passagedata><tw-passagedata pid="168" name="Make your way to the base of the conveyor belt" tags="" position="9140,2327" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="169" name="Take out the blacksmiths" tags="" position="9275,2328" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="170" name="Destroy the weapons cache" tags="" position="9403,2329" size="100,100">Double-click this passage to edit it.</tw-passagedata></tw-storydata>
 <script title="Twine engine code" data-main="harlowe">"use strict";var _slicedToArray=function(){return function(e,t){if(Array.isArray(e))return e;if(Symbol.iterator in Object(e))return function(e,t){var n=[],r=!0,a=!1,i=void 0;try{for(var o,s=e[Symbol.iterator]();!(r=(o=s.next()).done)&&(n.push(o.value),!t||n.length!==t);r=!0);}catch(e){a=!0,i=e}finally{try{!r&&s.return&&s.return()}finally{if(a)throw i}}return n}(e,t);throw new TypeError("Invalid attempt to destructure non-iterable instance")}}(),_typeof="function"==typeof Symbol&&"symbol"==typeof Symbol.iterator?function(e){return typeof e}:function(e){return e&&"function"==typeof Symbol&&e.constructor===Symbol&&e!==Symbol.prototype?"symbol":typeof e};function _defineProperty(e,t,n){return t in e?Object.defineProperty(e,t,{value:n,enumerable:!0,configurable:!0,writable:!0}):e[t]=n,e}function _toConsumableArray(e){if(Array.isArray(e)){for(var t=0,n=Array(e.length);t<e.length;t++)n[t]=e[t];return n}return Array.from(e)}!function(){
 /**
  * @license almond 0.3.3 Copyright jQuery Foundation and other contributors.

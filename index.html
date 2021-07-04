@@ -9,7 +9,7 @@
 </head>
 <body>
 <tw-story><noscript><tw-noscript>JavaScript needs to be enabled to play The OmniFace War - Medieval.</tw-noscript></noscript></tw-story>
-<tw-storydata name="The OmniFace War - Medieval" startnode="1" creator="Twine" creator-version="2.3.14" ifid="F664FDD6-89B3-4598-9EB4-DFBCF01AFFAC" zoom="0.25" format="Harlowe" format-version="3.2.2" options="" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css"></style><script role="script" id="twine-user-script" type="text/twine-javascript"></script><tw-passagedata pid="1" name="Start" tags="" position="8722,39" size="100,100">(set: $winery to false)(set: $barracks to false)(set: $church to false) You stand before a majestic castle. Guards crawling across the battlements and a sense of unease washes over you. The briefing said that everyone was simply an actor and that this is a Renaissance Fair style recreation. 
+<tw-storydata name="The OmniFace War - Medieval" startnode="1" creator="Twine" creator-version="2.3.14" ifid="F664FDD6-89B3-4598-9EB4-DFBCF01AFFAC" zoom="1" format="Harlowe" format-version="3.2.2" options="" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css"></style><script role="script" id="twine-user-script" type="text/twine-javascript"></script><tw-passagedata pid="1" name="Start" tags="" position="8722,39" size="100,100">(set: $winery to false)(set: $barracks to false)(set: $church to false) You stand before a majestic castle. Guards crawling across the battlements and a sense of unease washes over you. The briefing said that everyone was simply an actor and that this is a Renaissance Fair style recreation. 
 However, your target, the Queen, took this to a new level and after receiving her enhancements from OmniFace, took over the Renaissance Fair and started to rule over her kingdom.
 The gates open, and you walk through. As you approach the main marketplace, a crowd has gathered. A villager is in the middle of the crowd on his knees before the queen begging for mercy. She holds up for hand for silence.
 
@@ -29,36 +29,40 @@ As the crowd gets louder and louder, the Queen takes her long sword and draws fi
 
 [[Stare at the Queen]] </tw-passagedata><tw-passagedata pid="5" name="Stare at the Queen" tags="" position="8724,504" size="100,100">You also notice the three well dressed men that surround her. Thankfully the briefing mentioned them as well. 
 [[Lord Sommelier Alvaro Regras]]
-[[Lord General ???]]
+[[Lord General Henry Neville]]
 [[Lord Bishop Robert ??]]
 Getting near the Queen will be near impossible with them around. They must be taken out first. However, you cannot take them out by normal means because it would arouse suspicion. You must sabotage each of their responsibilities to ensure that the Queen takes them out for you.
-[[Head to the Tavern]]</tw-passagedata><tw-passagedata pid="6" name="Lord Sommelier Alvaro Regras" tags="" position="9020,674" size="100,100">A Portuguese noblemen who is in charge of the Queen&#39;s winery. She absolutely loves port in particular.</tw-passagedata><tw-passagedata pid="7" name="Lord General ???" tags="" position="9022,549" size="100,100">A nobleman in charge of the Queen&#39;s Army. A keen military strategist who constantly runs drills with his forces to keep them in top shape.</tw-passagedata><tw-passagedata pid="8" name="Lord Bishop Robert ??" tags="" position="9020,414" size="100,100">A nobleman that runs the Queen&#39;s Church. Their faith dictates that the Queen is but a goddess bound in human form to give an explanation into her enhancements. The Church is also responsible for recording the history of the Queen&#39;s Kingdom.</tw-passagedata><tw-passagedata pid="9" name="Head to the Tavern" tags="" position="8722,651" size="100,100">(set: $serfs to false)(set: $soldiers to false)(set: $parishoners to false) However, we need some information and the best place for that is always the tavern. Lots of drunk people and they will give up priceless information for more booze.
+[[Head to the Tavern]]</tw-passagedata><tw-passagedata pid="6" name="Lord Sommelier Alvaro Regras" tags="" position="9020,674" size="100,100">A Portuguese noblemen who is in charge of the Queen&#39;s winery. She absolutely loves port in particular.</tw-passagedata><tw-passagedata pid="7" name="Lord General Henry Neville" tags="" position="9022,549" size="100,100">A nobleman in charge of the Queen&#39;s Army. A keen military strategist who constantly runs drills with his forces to keep them in top shape.</tw-passagedata><tw-passagedata pid="8" name="Lord Bishop Robert ??" tags="" position="9020,414" size="100,100">A nobleman that runs the Queen&#39;s Church. Their faith dictates that the Queen is but a goddess bound in human form to give an explanation into her enhancements. The Church is also responsible for recording the history of the Queen&#39;s Kingdom.</tw-passagedata><tw-passagedata pid="9" name="Head to the Tavern" tags="" position="8722,651" size="100,100">However, we need some information and the best place for that is always the tavern. Lots of drunk people and they will give up priceless information for more booze.
 As you enter the tavern however, you can clearly see three distinct groups of people. The serfs that work at the winery drinking the cheap booze, the soldiers from the barracks drinking the decent stuff and the parishoners from the Church drinking the fanciest of wine.
 
 (if: $serfs is false)[ [[Head towards the serfs]] ]
 (if: $soldiers is false)[ [[Head towards the soldiers]] ]
-(if: $parishoners is false)[ [[Head towards the parishoners]] ]</tw-passagedata><tw-passagedata pid="10" name="Head towards the serfs" tags="" position="8573,825" size="100,100">(if: $serfs is true)[
+(if: $parishoners is false)[ [[Head towards the parishoners]] ]</tw-passagedata><tw-passagedata pid="10" name="Head towards the serfs" tags="" position="8573,825" size="100,100">{
+(if: $serfs is true)[
 I already have all of the information I need.
 ](else:)[
 You stop past the barkeep and order a glass of their cheapest booze. then you head on over to the serfs. A free table is nearby which you take.
-The serfs are bitching about their treatment at the winery.
-
+The serfs are bitching about their treatment at the winery.&lt;br&gt;
+&lt;br&gt;
 [[Listen into the serfs]]
-]</tw-passagedata><tw-passagedata pid="11" name="Head towards the soldiers" tags="" position="8723,825" size="100,100">(if: $soldiers is true)[
+]
+}</tw-passagedata><tw-passagedata pid="11" name="Head towards the soldiers" tags="" position="8723,825" size="100,100">{
+(if: $soldiers is true)[
 I already have all of the information I need.
 ](else:)[
-You stop past the barkeep and order a glass of their medium-priced booze. then you head on over to the soldiers. A free table is nearby which you take.
-The soldiers are openly slagging off the Queen.
-
+You stop past the barkeep and order a glass of their medium-priced booze. then you head on over to the soldiers. A free table is nearby which you take.&lt;br&gt;
+The soldiers are openly slagging off the Queen.&lt;br&gt;
+&lt;br&gt;
 [[Listen into the soldiers]]
-]</tw-passagedata><tw-passagedata pid="12" name="Head towards the parishoners" tags="" position="8873,825" size="100,100">(if: $parishoners is true)[
+]
+}</tw-passagedata><tw-passagedata pid="12" name="Head towards the parishoners" tags="" position="8873,825" size="100,100">{(if: $parishoners is true)[
 I already have all of the information I need.
 ](else:)[
 You stop past the barkeep and order a glass of their priciest booze. then you head on over to the parishoners. A free table is nearby which you take.
-The parishoners are praising the Queen and her glory.
-
-[[Listen into the parishoners]]
-]</tw-passagedata><tw-passagedata pid="13" name="Listen into the serfs" tags="" position="8568,978" size="100,100">You learn the following:
+The parishoners are praising the Queen and her glory.&lt;br&gt;
+&lt;br&gt;
+[[Listen into the parishoners]]&lt;br&gt;
+]}</tw-passagedata><tw-passagedata pid="13" name="Listen into the serfs" tags="" position="8568,978" size="100,100">You learn the following:
 
 * Guards at the winery are split into 3 groups.
 ** First lot are stationed at the stomping tubs to keep the serfs &#39;motivated&#39; with their swords
@@ -93,24 +97,27 @@ That&#39;s enough information to work with
 That&#39;s enough information to work with
 (set: $parishoners to true)
 
-[[Head back to the center of the Tavern]]</tw-passagedata><tw-passagedata pid="16" name="Head back to the center of the Tavern" tags="" position="8718,1136" size="100,100">(if: $serfs is true and $soldiers is true and $parishoners is true)[
-Ok, now I have all of the information I need to bring down the lords.
+[[Head back to the center of the Tavern]]</tw-passagedata><tw-passagedata pid="16" name="Head back to the center of the Tavern" tags="" position="8718,1132" size="100,100">{
+(if: $serfs is true and $soldiers is true and $parishoners is true)[
+Ok, now I have all of the information I need to bring down the lords.&lt;br&gt;
+&lt;br&gt;
 [[Go back to the Town Square]]
 ]
 (else:)[
-Where to move to next?
-
-[[Head towards the serfs]]
-[[Head towards the soldiers]]
+Where to move to next? &lt;br&gt;
+&lt;br&gt;
+[[Head towards the serfs]]&lt;br&gt;
+[[Head towards the soldiers]]&lt;br&gt;
 [[Head towards the parishoners]]
-]</tw-passagedata><tw-passagedata pid="17" name="Go back to the Town Square" tags="" position="8718,1302" size="100,100">Now that we have all the information we need, it&#39;s time to start taking down the lords.
+]
+}</tw-passagedata><tw-passagedata pid="17" name="Go back to the Town Square" tags="" position="8718,1302" size="100,100">Now that we have all the information we need, it&#39;s time to start taking down the lords.
 
 (if: $winery is false)[ [[Head for the Winery]] ]
 (if: $barracks is false)[ [[Head for the Barracks]] ]
 (if: $church is false)[ [[Head for the Church]] ]</tw-passagedata><tw-passagedata pid="18" name="Head for the Winery" tags="" position="759,1543" size="100,100">You approach the winery and see an expansive vineyard. In the distance is a large building, that must be where the wine is produced and stored.
 A guard rounds the corner towards you
 [[Quickly hide around another corner]]
-[[Start firing at the guard]]</tw-passagedata><tw-passagedata pid="19" name="Head for the Barracks" tags="" position="9657,1555" size="100,100">(set: $stables to false)(set: $gossip to false)(set: $paycut to false)(set: $armoury to false)(set: $disguised to false)You approach the barracks and before you stands a colossal fortress. Massive walls separate the barracks from the rest of the kingdom with an colossal gate that is overseen by two guards. 
+[[Start firing at the guard]]</tw-passagedata><tw-passagedata pid="19" name="Head for the Barracks" tags="" position="9657,1555" size="100,100">You approach the barracks and before you stands a colossal fortress. Massive walls separate the barracks from the rest of the kingdom with an colossal gate that is overseen by two guards. 
 
 You need to find a way into the barracks.
 
@@ -141,8 +148,8 @@ The remaining two guards run off leaving the entryway into the winery clear.
 [[Walk inside]]</tw-passagedata><tw-passagedata pid="25" name="Start a firefight" tags="" position="468,1870" size="100,100">You took aim at one of the guards with your pistol and snipe his SmartFace Mask, disintegrating it with a single shot. You run around the vineyard, firing on the other guards. Afterwards, the guards run away in shame with their masks crumbling away.
 
 [[Walk inside]]</tw-passagedata><tw-passagedata pid="26" name="Continue on this floor" tags="" position="378,2335" size="100,100">You decide to sabotage the wine making process. You notice that there are multiple floors presumably for additional wine extraction. There are several tubs with two serfs stomping around, crushing the grapes. There are a few guards constantly patrolling this area, making sure to &quot;motivate&quot; the serfs with their swords during their patrol.
-(set: $firstFloor to false)(set: $secondFloor to false)(set: $thirdFloor to false)
-[[Ground Floor]]</tw-passagedata><tw-passagedata pid="27" name="Move to the cellar" tags="" position="4308,2058" size="100,100">You sneak down the stairway and you find yourself in the cellar. There are quite a few guards patrolling this area. You could always clear out the guards first but they might raise the alarm in between their distress. (set: $spills to 0)(set: $poison to 0)
+
+[[Ground Floor]]</tw-passagedata><tw-passagedata pid="27" name="Move to the cellar" tags="" position="4308,2058" size="100,100">You sneak down the stairway and you find yourself in the cellar. There are quite a few guards patrolling this area. You could always clear out the guards first but they might raise the alarm in between their distress. 
 
 [[Clear out the guards]]
 [[Spill some wine]]
@@ -415,7 +422,7 @@ You still need to spill some more wine however before you can leave. Thankfully 
 [[Move upstairs]]
 ]</tw-passagedata><tw-passagedata pid="124" name="Spill some wine while at the exit" tags="" position="6627,3525" size="100,100">(set: $spills to it + 4) With the undisturbed barrels around you, you rip out a few of the corks and the guards still don&#39;t notice a thing. 
 
-[[Marvel at your destruction]] </tw-passagedata><tw-passagedata pid="125" name="Walk inside" tags="" position="477,2162" size="100,100">(set: $cellar to false)(set: $production to false) Inside you see a few guards harrassing some serfs that are stomping around in the tubs crushing all of the wine grapes. You notice to the side, a stairway. This should lead to the wine cellar where the wine is stored to age before it&#39;s consumption by the Queen and her guests. Some poison, maybe even some spillage would certainly attract the Queen&#39;s wrath.
+[[Marvel at your destruction]] </tw-passagedata><tw-passagedata pid="125" name="Walk inside" tags="" position="477,2162" size="100,100">Inside you see a few guards harrassing some serfs that are stomping around in the tubs crushing all of the wine grapes. You notice to the side, a stairway. This should lead to the wine cellar where the wine is stored to age before it&#39;s consumption by the Queen and her guests. Some poison, maybe even some spillage would certainly attract the Queen&#39;s wrath.
 
 [[Continue on this floor]]
 [[Move to the cellar]]</tw-passagedata><tw-passagedata pid="126" name="Take out the guards one by one" tags="" position="293,2752" size="100,100">Thankfully there is plenty of cover to sneak around. Most of the guards are also alone for the most part but you have to hope that the serfs stay quiet and don&#39;t alert the other guards. 
@@ -569,107 +576,272 @@ You: //Who destroyed the winery?//
 
 [[Go back to the Town Square]] </tw-passagedata><tw-passagedata pid="154" name="Circle the building." tags="" position="9337,1702" size="100,100">As you circle the building, you notice the guard tower that oversees the entire kingdom. Dealing with this tower would do significant damage to the Lord General&#39;s reputation. You continue walking around and you notice a large crack in the wall that you can just fit inside to sneak your way in.
 
-[[Enter through the crack]]</tw-passagedata><tw-passagedata pid="155" name="Take out the guards at the entrance." tags="" position="9657,1701" size="100,100">Thankfully there is no citizens around to witness your assault on the entrance guards. As they charge at you with their Omni-Pike, you swiftly fire at their SmartFace Masks and disintegrate them. The guards are immediately blinded by the sunlight and crawl into the fetal position. 
+[[Enter through the crack]]</tw-passagedata><tw-passagedata pid="155" name="Take out the guards at the entrance." tags="" position="9657,1700" size="100,100">Thankfully there is no citizens around to witness your assault on the entrance guards. As they charge at you with their Omni-Pike, you swiftly fire at their SmartFace Masks and disintegrate them. The guards are immediately blinded by the sunlight and crawl into the fetal position. 
 
 [[Walk through the gate]]</tw-passagedata><tw-passagedata pid="156" name="Distract out the guards at the entrance with a noisemaker." tags="" position="9806,1699" size="100,100">You move to the side of the entrance away from the gaze of the guards, take out your Noisemaker, push the button and throw it over the wall. As a loud &quot;HAPPY BIRTHDAY&quot; echoes through the area, the guards immediately have a look of shock on their faces as you peek around the corner. They look at each other.
 Guard 1: //Oh no, it&#39;s the Queen&#39;s birthday!//
 Guard 2: //Quickly, off to the general store to buy the finest cheddar cheese wheel!//
 The guards then run off allowing you to easy enter the barracks.
 
-[[Walk through the gate]]</tw-passagedata><tw-passagedata pid="157" name="Enter through the crack" tags="" position="9234,1861" size="100,100">You enter through the crack and find yourself in a secluded area of the training field. There are quite a few Queensguard training here with their Smart-Bows. 
+[[Walk through the gate]]</tw-passagedata><tw-passagedata pid="157" name="Enter through the crack" tags="" position="9234,1861" size="100,100">(set: $trainingField to true)You enter through the crack and find yourself in a secluded area of the training field. There are quite a few Queensguard training here with their Smart-Bows. 
 
 [[Sneak around to the Barracks&#39; entrance]]
 [[Start a fight with the guards]]</tw-passagedata><tw-passagedata pid="158" name="Walk through the gate" tags="" position="9729,1851" size="100,100">Inside the gate, to the left, is the Stables where citizens can pay to hire a horse to travel vast distances. On the other side is the barracks. 
 
 [[Head over to the stables]]
-[[Enter the barracks]]</tw-passagedata><tw-passagedata pid="159" name="Sneak around to the Barracks&#39; entrance" tags="" position="9159,2011" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="160" name="Start a fight with the guards" tags="" position="9309,2011" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="161" name="Head over to the stables" tags="" position="9654,2001" size="100,100">The stables are full of horses that seem like they have been cooped up for quite a while. No guards around as well which is even better. You could come back for them later but there may not be as many to let free.
+[[Enter the barracks]]</tw-passagedata><tw-passagedata pid="159" name="Sneak around to the Barracks&#39; entrance" tags="" position="9340,2001" size="100,100">You decide to take the stealthy approach. You managed to avoid the gaze of all of the Queensguard training and make it to the entrance of the barracks.
 
-[[Let loose the horses]]</tw-passagedata><tw-passagedata pid="162" name="Enter the barracks" tags="" position="9804,2000" size="100,100">You walk inside the barracks and immediately dash for a hiding spot. There are guards everywhere. You might not be able to sneak your way through without being caught. You need some Queensguard armour to blend in. 
+[[Sneak into the barracks]]</tw-passagedata><tw-passagedata pid="160" name="Start a fight with the guards" tags="" position="9116,2004" size="100,100">You hide behind one of the targets, wait for the right moment and shoot at one of the Queensguard training with his Intelli-Bow. The commotion is enough to send everyone is the near vicinity towards you. After a bit of ducking and weaving, you manage to eliminate the last SmartFace Mask. However, some of these Queensguard are strong willed. They ran straight for the Barracks and raise the alarm.
 
-[[Barracks lobby]]</tw-passagedata><tw-passagedata pid="163" name="Move to the next floor" tags="" position="9134,3178" size="100,100">Guard Quarters and Guard Tower access</tw-passagedata><tw-passagedata pid="164" name="Go through the first door" tags="" position="10041,3195" size="100,100">You go through the first door and the sight of what&#39;s inside, stuns you momentarily. You see a factory that is creating many of the arms used by the Queensguard, the Smart-Pike and the Intelli-Bow. There are a few blacksmiths around melding the technology with medieval blacksmithing but strangely, no guards. 
+[[Run to the stables]]</tw-passagedata><tw-passagedata pid="161" name="Head over to the stables" tags="" position="9626,1997" size="100,100">The stables are full of horses that seem like they have been cooped up for quite a while. No guards around as well which is even better. You could come back for them later but there may not be as many to let free.
+
+[[Let loose the horses]]</tw-passagedata><tw-passagedata pid="162" name="Enter the barracks" tags="" position="9819,2057" size="100,100">You walk inside the barracks and immediately dash for a hiding spot. There are guards everywhere. You might not be able to sneak your way through without being caught. You need some Queensguard armour to blend in. 
+
+[[Barracks lobby]]</tw-passagedata><tw-passagedata pid="163" name="Move to the next floor" tags="" position="9543,3004" size="100,100">{
+(if: $disguised is true) [
+You walk up the stairs to the second floor with your armour clanking fairly loudly. 
+] (else:) [
+You need a disguise before you make your way upstairs.
+]
+}
+
+[[Second Floor of the Barracks]]</tw-passagedata><tw-passagedata pid="164" name="Go through the first door" tags="" position="10425,3047" size="100,100">You go through the first door and the sight of what&#39;s inside, stuns you momentarily. You see a factory that is creating many of the arms used by the Queensguard, the Smart-Pike and the Intelli-Bow. There are a few blacksmiths around melding the technology with medieval blacksmithing but strangely, no guards. 
 
 You could eliminate the blacksmiths so they stay out of your way but you will attract some guards. You could destroy the conveyor belt and cause a significant delay. Also, you could destroy the weapons that have already been built to further cause heckery.
 
 [[Make your way to the base of the conveyor belt]]
 [[Take out the blacksmiths]]
-[[Destroy the weapons cache]]</tw-passagedata><tw-passagedata pid="165" name="Go through the second door" tags="" position="11322,3200" size="100,100">Meeting Hall</tw-passagedata><tw-passagedata pid="166" name="Go through the third door" tags="" position="12454,3197" size="100,100">Lord General&#39;s office</tw-passagedata><tw-passagedata pid="167" name="Let loose the horses" tags="" position="9581,2199" size="100,100">(set: $stables to true)You go to the first horse, open the gate and untie the ropes binding him to his enclosure. Once the horse is unbound, it bolts straight for the gate and runs off for its freedom. 
+[[Destroy the weapons cache]]</tw-passagedata><tw-passagedata pid="165" name="Go through the third door" tags="" position="11769,3114.6666666666665" size="100,100">{
+(if: $disguised is true) [
+(if: $note is true and $omniFaceNote is true) [
+&lt;!--If both notes are forged already--&gt;
+(if: $notePlaced is false and $omniFaceNotePlaced is false)[
+You walk into the meeting hall. There are a few Queensguard in the hall drinking away. You walk up to the podium on the other end of the hall and place both notes on the podium with the paycut note on top. 
+](elseif: $notePlaced is true and $omniFaceNotePlaced is false)[
+You walk back into the meeting hall. A few of the Queensguard grunt at you in acknowledgement as you make your way to the podium. You slip the protection proclaimation behind the one about the paycut.
+] (elseif: $notePlaced is false and $omniFaceNotePlaced is true) [
+You walk back into the meeting hall. A few of the Queensguard grunt at you in acknowledgement as you make your way to the podium. You slip the paycut proclaimation in front the one about the Queen&#39;s protection.
+]
+&lt;br&gt;&lt;br&gt;
+[[Both notes cutscene]]
+] (elseif: $note is true and $omniFaceNote is false) [
+&lt;!--If only the paycut note is forged&#96;--&gt;
+(set: $notePlaced to true)You walk into the meeting hall. There are a few Queensguard in the hall drinking away. You walk up to the podium on the other end of the hall and place the note.&lt;br&gt;&lt;br&gt;
+[[Barracks lobby]]
+] (elseif: $note is false and $omniFaceNote is true) [
+&lt;!--If only the protection note is forged&#96;--&gt;
+(set: $omniFaceNotePlaced to true)You walk into the meeting hall. There are a few Queensguard in the hall drinking away. You walk up to the podium on the other end of the hall and place the note.&lt;br&gt;&lt;br&gt;
+[[Barracks lobby]]
+] (else:) [
+&lt;!--Neither the paycut note or the protection note--&gt;
+You walk into the meeting hall. There are a few Queensguard in the hall drinking away. You have no real reason to be in here at the moment.&lt;br&gt;&lt;br&gt;
+[[Barracks lobby]]
+]] (else:) [
+You creak the door open slightly and you feel the eyes of the few Queensguard inside and immediately close the door. You need a disguise if you intend to go any further.&lt;br&gt;&lt;br&gt;
+[[Barracks lobby]] 
+]
+}</tw-passagedata><tw-passagedata pid="166" name="Go through the second door" tags="" position="11210.666666666666,3202.6666666666665" size="100,100">{
+(if: $note is true and $omniFaceNote is false) [
+&lt;!--If only the paycut note is forged--&gt;
+(if: $omniFace is true) [
+You walk back into the Lord General&#39;s quarters armed with the knowledge of OmniFace&#39;s meeting with the Queen. You could cause further harm to the morale of the Queensguard by pointing out OmniFace&#39;s&lt;br&gt;&lt;br&gt;
+[[Forge protection note]]
+] (else:) [
+You walk back into the Lord General&#39;s quarters. You can&#39;t quite think of anything to forge though. Perhaps you need to explore a bit more of the barracks to figure something out.&lt;br&gt;&lt;br&gt;
+[[Head back to the lobby]]
+]
+] (elseif: $note is false and $omniFaceNote is true)[
+&lt;!--If only the protection note is forged--&gt;
+You walk back into the Lord General&#39;s quarters and you remember you can forge a note telling the troops that they are getting a paycut by order of the Queen.&lt;br&gt;&lt;br&gt;
+[[Forge paycut note]] 
+] (elseif: $note is true and $omniFaceNote is true) [
+&lt;!--If both notes are forged already--&gt;
+You walk back into the Lord General&#39;s quarters. There isn&#39;t much you can do now. Enough damage has been done.&lt;br&gt;&lt;br&gt;
+[[Head back to the lobby]]
+] (else:) [
+&lt;!--Neither the paycut note or the protection note--&gt;
+You walk in and you notice these photos everywhere with the Lord General. This must be his personal quarters. You see a desk with some parchment, ink, a quill and his personal seal. Some thoughts cross your mind. One could easily destablize an army with the contents in this room. You forge royal proclaimations using the Lord General&#39;s seal and he would have a hard time trying to explain it.&lt;br&gt;&lt;br&gt;
+[[Forge paycut note]]
+(if: $omniFace is true)[ [[Forge protection note]] ]
+]
+}</tw-passagedata><tw-passagedata pid="167" name="Let loose the horses" tags="" position="9591,2248" size="100,100">(set: $stables to true)You go to the first horse, open the gate and untie the ropes binding him to his enclosure. Once the horse is unbound, it bolts straight for the gate and runs off for its freedom. 
 
 Now the other horses get excited and you quickly free up the other horses. Footsteps are heard and you quickly hide, a bunch of guards burst out of the barracks. Looks like they noticed the horses making a run for it. 
 
-[[Sneak into the barracks]]</tw-passagedata><tw-passagedata pid="168" name="Make your way to the base of the conveyor belt" tags="" position="9891,3316" size="100,100">You sneak over to the base of the conveyor belt while avoiding the blacksmiths and quietly rip open the panel exposing the electronics. You slowly fire your pistol at it so you don&#39;t attract the attention of the blacksmiths. 
+[[Sneak into the barracks]]</tw-passagedata><tw-passagedata pid="168" name="Make your way to the base of the conveyor belt" tags="" position="10275,3168" size="100,100">You sneak over to the base of the conveyor belt while avoiding the blacksmiths and quietly rip open the panel exposing the electronics. You slowly fire your pistol at it so you don&#39;t attract the attention of the blacksmiths. 
 
 As the virus eats away at the electronics, the conveyor belt starts to falter. One of the blacksmiths walks over to the base of the conveyor belt and realises that the electronics have been destroyed. The techno-virus has eaten away at the circuit boards and requires a whole new set of electronics to fix. 
 
-[[Continue to listen]]</tw-passagedata><tw-passagedata pid="169" name="Take out the blacksmiths" tags="" position="10029,3441" size="100,100">
+[[Continue to listen]]</tw-passagedata><tw-passagedata pid="169" name="Take out the blacksmiths" tags="" position="10413,3293" size="100,100">
 
 [[Quickly destroy the weapon cache]]
-[[Quickly get to the base of the conveyor belt]]</tw-passagedata><tw-passagedata pid="170" name="Destroy the weapons cache" tags="" position="10208,3357" size="100,100">You spot the weapons cache nearby and sneak over to it. You notice plenty of Smart-Pikes and Intelli-Bows ready to be supplied to the troops. 
+[[Quickly get to the base of the conveyor belt]]</tw-passagedata><tw-passagedata pid="170" name="Destroy the weapons cache" tags="" position="10592,3209" size="100,100">You spot the weapons cache nearby and sneak over to it. You notice plenty of Smart-Pikes and Intelli-Bows ready to be supplied to the troops. 
 
 Luckily the [[Viral Bombs]] you have will do the job just fine so you sneak to a hiding spot and throw a Viral Bomb. As the techno-virus takes effect, the blacksmiths notice the damage and make their way over but it&#39;s too late and the techno-virus has eaten away at the circuit boards to a point of no return.
 
 [[Make your way to the base of the conveyor belt]]
-[[Take out the blacksmiths]]</tw-passagedata><tw-passagedata pid="171" name="Viral Bombs" tags="" position="10343,3529" size="100,100">Act similar to a grenade so you can throw one, wait a few seconds and then the immediate area is swamped with the techno-virus. Works on all forms of technology including Smart-Face Masks.</tw-passagedata><tw-passagedata pid="172" name="Sneak into the barracks" tags="" position="9582,2368" size="100,100">You walk inside the barracks and immediately dash for a hiding spot.
+[[Take out the blacksmiths]]</tw-passagedata><tw-passagedata pid="171" name="Viral Bombs" tags="" position="10727,3381" size="100,100">Act similar to a grenade so you can throw one, wait a few seconds and then the immediate area is swamped with the techno-virus. Works on all forms of technology including Smart-Face Masks.</tw-passagedata><tw-passagedata pid="172" name="Sneak into the barracks" tags="" position="9582,2443" size="100,100">You walk inside the barracks and immediately dash for a hiding spot.
 
-[[Barracks lobby]]</tw-passagedata><tw-passagedata pid="173" name="Quickly destroy the weapon cache" tags="" position="10094,3685" size="100,100">You spot the weapons cache nearby and run over over to it. You notice plenty of Smart-Pikes and Intelli-Bows ready to be supplied to the troops. Luckily the [[Viral Bombs]] you have will do the job just fine so you sneak to a hiding spot and throw a Viral Bomb. 
+[[Barracks lobby]]</tw-passagedata><tw-passagedata pid="173" name="Quickly destroy the weapon cache" tags="" position="10478,3537" size="100,100">You spot the weapons cache nearby and run over over to it. You notice plenty of Smart-Pikes and Intelli-Bows ready to be supplied to the troops. Luckily the [[Viral Bombs]] you have will do the job just fine so you sneak to a hiding spot and throw a Viral Bomb. 
 
 As the techno-virus takes effect, you hear footsteps nearby and all of a sudden, the door flys open and a stream of guards fills the room. They spot the weapons and realise it is too late. The techno-virus has eaten away at the circuit boards.
 
 [[Wait for the guards to leave]]
-[[Sneak to the base of the conveyor belt]]</tw-passagedata><tw-passagedata pid="174" name="Quickly get to the base of the conveyor belt" tags="" position="9937,3689" size="100,100">You run over to the conveyor belt&#39;s base and rip open the panel exposing the electronics controlling it. You quickly start firing your pistol at it showering the electronics with the techno-virus. 
+[[Sneak to the base of the conveyor belt]]</tw-passagedata><tw-passagedata pid="174" name="Quickly get to the base of the conveyor belt" tags="" position="10321,3541" size="100,100">You run over to the conveyor belt&#39;s base and rip open the panel exposing the electronics controlling it. You quickly start firing your pistol at it showering the electronics with the techno-virus. 
 
 As the virus continues to eat away at the electronics and the conveyor belt starts to falter, the door flys open and a stream of guards rush through. Some of the guards make their way to the base and realise that it&#39;s been destroyed. 
 
 [[Wait for the guards to give up]]
-[[Destroy the weapon cache from afar]]</tw-passagedata><tw-passagedata pid="175" name="Wait for the guards to leave" tags="" position="10220,3775" size="100,100">The Queensguard start to moan and complain as many of their weapons have started to malfunction and require either replacement which is easier or refurbishment which is time consuming. The Queensguard then find the blacksmiths and put on new SmartFace Masks and after searching a bit more, they cancel their search and return to their posts. You are in the clear.
+[[Destroy the weapon cache from afar]]</tw-passagedata><tw-passagedata pid="175" name="Wait for the guards to leave" tags="" position="10604,3627" size="100,100">The Queensguard start to moan and complain as many of their weapons have started to malfunction and require either replacement which is easier or refurbishment which is time consuming. The Queensguard then find the blacksmiths and put on new SmartFace Masks and after searching a bit more, they cancel their search and return to their posts. You are in the clear.
 
-[[Quickly sneak to the base of the conveyor belt]]</tw-passagedata><tw-passagedata pid="176" name="Sneak to the base of the conveyor belt" tags="" position="10109,3903" size="100,100">In between avoiding the guards, you sneak your way to the base of the conveyor belt and quietly rip open the panel slightly exposing the electronics. You slowly fire your pistol but you need to duck back into cover each time because the Queensguard are very jumpy and react to every sound they hear. 
+[[Quickly sneak to the base of the conveyor belt]]</tw-passagedata><tw-passagedata pid="176" name="Sneak to the base of the conveyor belt" tags="" position="10493,3755" size="100,100">In between avoiding the guards, you sneak your way to the base of the conveyor belt and quietly rip open the panel slightly exposing the electronics. You slowly fire your pistol but you need to duck back into cover each time because the Queensguard are very jumpy and react to every sound they hear. 
 
 As the virus eats away at the electronics, the conveyor belt starts to falter. The guards get extra nervous. They hasten their search but still can&#39;t find you. They start saying to one another that this is a dangerous omen and that the end is nigh. They start running off in fear of the end of the world. 
 
 Now that your work is done in the armoury, it&#39;s time to leave.
 
-[[Leave the armoury]] </tw-passagedata><tw-passagedata pid="177" name="Go back outside to the stables" tags="" position="9796,2159" size="100,100">You quickly sneak back outside and head to the stables. The stables are full of horses that seem like they have been cooped up for quite a while. No guards around as well which is even better. You could come back for them later but there may not be as many to let free.
+[[Leave the armoury]] </tw-passagedata><tw-passagedata pid="177" name="Go back outside to the stables" tags="" position="9805,2247" size="100,100">You quickly sneak back outside and head to the stables. The stables are full of horses that seem like they have been cooped up for quite a while. No guards around as well which is even better. You could come back for them later but there may not be as many to let free.
 
 [[Let loose the horses]]
-[[Enter the barracks]]</tw-passagedata><tw-passagedata pid="178" name="Quickly sneak to the base of the conveyor belt" tags="" position="10282,3901" size="100,100">You sneak over to the base of the conveyor belt while avoiding the blacksmiths and quietly rip open the panel exposing the electronics. You slowly fire your pistol at it so you don&#39;t attract the attention of the blacksmiths. 
+[[Enter the barracks]]</tw-passagedata><tw-passagedata pid="178" name="Quickly sneak to the base of the conveyor belt" tags="" position="10666,3753" size="100,100">You sneak over to the base of the conveyor belt while avoiding the blacksmiths and quietly rip open the panel exposing the electronics. You slowly fire your pistol at it so you don&#39;t attract the attention of the blacksmiths. 
 
 As the virus eats away at the electronics, the conveyor belt starts to falter. One of the blacksmiths walks over to the base of the conveyor belt and realises that the electronics have been destroyed. The techno-virus has eaten away at the circuit boards and requires a whole new set of electronics to fix. 
 
-[[Sit back and watch]]</tw-passagedata><tw-passagedata pid="179" name="Wait for the guards to give up" tags="" position="9795,3899" size="100,100">The Queensguard start moaning as many of the guards need weapons but another mentions that the weapon cache is still intact. So the Queensguard start carrying crates of their new weapons out of the armoury while more guards find the blacksmiths and equip them with new SmartFace Masks.
+[[Sit back and watch]]</tw-passagedata><tw-passagedata pid="179" name="Wait for the guards to give up" tags="" position="10179,3751" size="100,100">The Queensguard start moaning as many of the guards need weapons but another mentions that the weapon cache is still intact. So the Queensguard start carrying crates of their new weapons out of the armoury while more guards find the blacksmiths and equip them with new SmartFace Masks.
 
-[[Leave the armoury]]</tw-passagedata><tw-passagedata pid="180" name="Destroy the weapon cache from afar" tags="" position="9948,3899" size="100,100">In between avoiding the guards, you make your way to a hiding spot near the weapons cache. The Queensguard start moaning as many of the guards need weapons but another mentions that the weapon cache is still intact.
+[[Leave the armoury]]</tw-passagedata><tw-passagedata pid="180" name="Destroy the weapon cache from afar" tags="" position="10332,3751" size="100,100">In between avoiding the guards, you make your way to a hiding spot near the weapons cache. The Queensguard start moaning as many of the guards need weapons but another mentions that the weapon cache is still intact.
 
 This is your chance so you prime one of your [[Viral Bombs]] and lob it at the cache as the guards start to lift the crates. The guards are immediately caught in the viral cloud and drop the crates and make a run for it. There are a few guards remaining but you do have a clear way out of the armoury.
 
-[[Leave the armoury]] </tw-passagedata><tw-passagedata pid="181" name="Continue to listen" tags="" position="9838,3462" size="100,100">Blacksmith 1: //Hey, these electronics are destroyed. We&#39;re not getting the conveyor belt back up anytime soon.//
+[[Leave the armoury]] </tw-passagedata><tw-passagedata pid="181" name="Continue to listen" tags="" position="10222,3314" size="100,100">Blacksmith 1: //Hey, these electronics are destroyed. We&#39;re not getting the conveyor belt back up anytime soon.//
 Blacksmith Supervisor: //Hmm, better get the Queensguard to have a look at this.//
 Blacksmith 1 runs off to raise the alarm.
 Blacksmith Supervisor: //Alright everyone, better have a break in the meantime so we don&#39;t get in the Queensguards&#39; way//
 The blacksmiths leave the armoury leaving you all alone inside, however, the threat of the Queensguard investigating looms.
 
-[[Destroy the weapons cache before the Queensguard arrive]]</tw-passagedata><tw-passagedata pid="182" name="Destroy the weapons cache before the Queensguard arrive" tags="" position="9499,3859" size="100,100">Now that you are all alone, you can quickly destroy the weapons cache before the guards arrive. You make your way over to the cache and discover plenty of Smart-Pikes and Intelli-Bows ready to be supplied to the troops. 
+[[Destroy the weapons cache before the Queensguard arrive]]</tw-passagedata><tw-passagedata pid="182" name="Destroy the weapons cache before the Queensguard arrive" tags="" position="9883,3711" size="100,100">Now that you are all alone, you can quickly destroy the weapons cache before the guards arrive. You make your way over to the cache and discover plenty of Smart-Pikes and Intelli-Bows ready to be supplied to the troops. 
 
 Luckily the [[Viral Bombs]] you have will do the job just fine so you sneak to a hiding spot and throw a Viral Bomb. You marvel as the techno-virus takes effect and then realise that it&#39;s time to leave.
 
 [[Leave the armoury]]</tw-passagedata><tw-passagedata pid="183" name="Barracks lobby" tags="" position="10968,2905" size="100,100">There are a few doors on this floor and a staircase that goes to another floor. You hear lots of banging coming from the door on the left. You suspect that might be the armoury. There is another door right near the staircase and another on the other side of the room.
 
-[[Move to the next floor]]
-(if: $armoury is false)[ [[Go through the first door]] ]
-[[Go through the second door]]
-[[Go through the third door]]
-(if: $stables is false)[ [[Go back outside to the stables]] ]</tw-passagedata><tw-passagedata pid="184" name="Leave the armoury" tags="" position="9981,4247" size="100,100">(set: $armoury to true)On the way to the exit, you find some spare Queensguard armour that you can take to wear as a disguise.
+{
+[[Move to the next floor]]&lt;br&gt;
+(if: $armoury is false)[ [[Go through the first door]]&lt;br&gt; ]
+[[Go through the third door]]&lt;br&gt;
+[[Go through the second door]]&lt;br&gt;
+(if: $stables is false)[ [[Go back outside to the stables]] ]
+}</tw-passagedata><tw-passagedata pid="184" name="Leave the armoury" tags="" position="10365,4099" size="100,100">(set: $armoury to true)On the way to the exit, you find some spare Queensguard armour that you can take to wear as a disguise.
 
-[[Take the armour and leave]]</tw-passagedata><tw-passagedata pid="185" name="Sit back and watch" tags="" position="10282,4051" size="100,100">Blacksmith 1: //Hey, these electronics are destroyed. We&#39;re not getting the conveyor belt back up anytime soon.//
+[[Take the armour and leave]]</tw-passagedata><tw-passagedata pid="185" name="Sit back and watch" tags="" position="10666,3903" size="100,100">Blacksmith 1: //Hey, these electronics are destroyed. We&#39;re not getting the conveyor belt back up anytime soon.//
 Blacksmith Supervisor: //Hmm, better get the Queensguard to have a look at this.//
 Blacksmith 1 runs off to raise the alarm.
 Blacksmith Supervisor: //Alright everyone, better have a break in the meantime so we don&#39;t get in the Queensguards&#39; way//
 The blacksmiths leave the armoury leaving you all alone inside, with a clear way to the exit.
 
-[[Leave the armoury]]</tw-passagedata><tw-passagedata pid="186" name="Take the armour and leave" tags="" position="9845,4402" size="100,100">(set: $disguised to true)
+[[Leave the armoury]]</tw-passagedata><tw-passagedata pid="186" name="Take the armour and leave" tags="" position="10891,4411" size="100,100">(set: $disguised to true)
 
-[[Continue leaving]]</tw-passagedata><tw-passagedata pid="187" name="Continue leaving" tags="" position="10309,4589" size="100,100">
+[[Barracks lobby]]</tw-passagedata><tw-passagedata pid="187" name="startup" tags="startup" position="8238,61" size="100,100">{
+&lt;!--Tavern variables--&gt;
+(set: $serfs to false)
+(set: $soldiers to false)
+(set: $parishoners to false)
 
-[[Barracks lobby]]</tw-passagedata></tw-storydata>
+&lt;!--Winery Variables--&gt;
+(set: $cellar to false)
+(set: $production to false)
+(set: $spills to 0)
+(set: $poison to 0)
+(set: $firstFloor to false)
+(set: $secondFloor to false)
+(set: $thirdFloor to false)
+
+&lt;!--Barracks variables--&gt;
+(set: $trainingField to false)
+(set: $stables to false)
+(set: $gossip to false)
+(set: $paycut to false)
+(set: $armoury to false)
+(set: $disguised to false) &lt;!--Disguised as a member of the Queensguard--&gt;
+(set: $note to false) &lt;!--Do we have the forged note about the paycut--&gt;
+(set: $notePlaced to false)
+(set: $omniFace to false) &lt;!--Have we seen OmniFace meeting with the Queen--&gt;
+(set: $omniFaceNote to false) &lt;!--Do we have the forged note about OmniFace taking over protection duties--&gt;
+(set: $omniFaceNotePlaced to false)
+}</tw-passagedata><tw-passagedata pid="188" name="Passage way to the Guard Tower" tags="" position="8455,3248" size="100,100">You walk down the passageway towards the Guard Tower. You notice that the tower is quite large and can see quite a bit including into the palace. As you enter the base however, you notice quite a few guards and some are weary of your presence. One wrong move and the Queensguard would be upon you.
+
+[[Base of the Guard Tower]]</tw-passagedata><tw-passagedata pid="189" name="Guard Quarters" tags="" position="9345,3316" size="100,100">{
+(if: $omniFaceNote is true and $omniFaceNotePlaced is false) [
+As you walk into the Guard Quarters, there are a few guards lying on their beds so you quickly put up the note that you made earlier about OmniFace&#39;s presence.
+
+[[Read the note]]
+] (else:) [
+As you walk into the Guard Quarters, there are a few guards lying on their beds. There isn&#39;t a real lot you can do here at the moment.
+]
+}</tw-passagedata><tw-passagedata pid="190" name="Forge paycut note" tags="" position="11162.666666666666,3357.6666666666665" size="100,100">(set: $note to true)You quickly write out a royal proclaimation explaining that the soldiers will be taking a paycut as the kingdom requires funds to continue to function.
+
+[[Head back to the lobby]]</tw-passagedata><tw-passagedata pid="191" name="Forge protection note" tags="" position="11327.666666666666,3353.6666666666665" size="100,100">(set: $omniFaceNote to true)Given the troops are now aware of OmniFace&#39;s presence in the palace, now would be a great opportunity to take advantage and set them up as wanting to take their jobs. A quick proclaimation with the Lord General&#39;s seal and now we wait in the meeting room for everything to fall together. You additionally forge a special note to be put up in the Guard Quarters to prepare them for the announcement.
+
+[[Head back to the lobby]]</tw-passagedata><tw-passagedata pid="192" name="Head back to the lobby" tags="" position="11221.666666666666,3602.6666666666665" size="100,100">You leave the quarters in an immaculate condition. Hopefully the Lord General doesn&#39;t get suspicious. 
+
+[[Barracks lobby]]</tw-passagedata><tw-passagedata pid="193" name="Both notes cutscene" tags="" position="11787,3334.6666666666665" size="100,100"></tw-passagedata><tw-passagedata pid="194" name="Head to the top floor" tags="" position="8345,3587" size="100,100">You start the walk upstairs and you that complaining internally that there is no elevator, just lots and lots of stairs especially with some heavy armour as well. 
+
+[[Top floor of the Guard Tower]]</tw-passagedata><tw-passagedata pid="195" name="Look through the telescope aimed at the palace" tags="" position="8543,3915" size="100,100">(set: $omniFace to true)You look through the telescope and you see the Queen meeting with some unknown figures. You then notice the logos on their shirts and it is easily recognisable as the OmniFace logo. You can use this information. You then overhear a conversation between two of the Queensguard.
+
+[[Continue listening to the conversation]]</tw-passagedata><tw-passagedata pid="196" name="Base of the Guard Tower" tags="" position="8455,3437" size="100,100">Now that you are at the base of the Guard Tower, you could head upstairs to see what the view is like around the kingdom or head back to the barracks.
+
+[[Head to the top floor]]
+[[Go back to the barracks]]</tw-passagedata><tw-passagedata pid="197" name="Top floor of the Guard Tower" tags="" position="8458,3745" size="100,100">{(if: $omniFace is true) [
+The view is still beautiful but now is the time to cause a rebellion.&lt;br&gt;&lt;br&gt;
+] (else:) [
+You reach the top of the Guard Tower and the view is beautiful from above. There are a few telescopes and one is pointed towards the palace and you notice some figures near the Palace Gates.&lt;br&gt;&lt;br&gt;
+[[Look through the telescope aimed at the palace]]
+]}
+[[Head downstairs to the base]]</tw-passagedata><tw-passagedata pid="198" name="Head downstairs to the base" tags="" position="8577,3589" size="100,100">Thankfully you are going down the stairs this time so it&#39;s not so arduous compared with going upstairs. You can&#39;t help but occasionally stop so your armour doesn&#39;t send you tumbling down the stairs. 
+
+[[Base of the Guard Tower]]</tw-passagedata><tw-passagedata pid="199" name="Go back to the barracks" tags="" position="8797,3325" size="100,100">You walk on back to the barracks with your armour clinking around.
+
+[[Second Floor of the Barracks]] </tw-passagedata><tw-passagedata pid="200" name="Second Floor of the Barracks" tags="" position="9244,3098" size="100,100">Now you are on the second floor of the Barracks. There is only a single door which clearly says Guard Quarters on it along with a horseshoe hanging up. There is also a passage way that upon further examination, leads to the Guard Tower.
+
+[[Passage way to the Guard Tower]]
+[[Guard Quarters]]
+[[Move back downstairs]]</tw-passagedata><tw-passagedata pid="201" name="Move back downstairs" tags="" position="9542,3164" size="100,100">You make your way back downstairs into the lobby area of the Barracks.
+
+[[Barracks lobby]]</tw-passagedata><tw-passagedata pid="202" name="Continue listening to the conversation" tags="" position="8345,4013" size="100,100">Guard 1: //God I hate those OmniFace guys.//
+Guard 2: //Yeah, they&#39;ve been looking for a reason to replace us for years. They have no loyalty to the Queen like we do.//
+Guard 1: //I reckon it would be an open rebellion if the Queen all of a sudden, replaced us with those goons.//
+
+//Open rebellion eh?//, you think to yourself. This is too good of an opportunity to pass up. Definitely worth a trip back to the Lord General&#39;s quarters to kickstart this rebellion.
+
+[[Top floor of the Guard Tower]] </tw-passagedata><tw-passagedata pid="203" name="Read the note" tags="" position="9132,3415" size="100,100">The note reads as follows:
+
+//To my fellow comrades,
+
+Our beloved Queen is currently meeting with representatives from the OmniFace corporation, however, there have been some fears going around that you will be replaced by OmniFace&#39;s troopers.
+
+&#39;&#39;THIS IS NOT THE CASE!&#39;&#39;
+
+Our forces will always remain the best protection detail for Her Majesty to the very end. 
+
+Yours truly,
+Lord General Henry Neville//
+
+[[Second Floor of the Barracks]]</tw-passagedata><tw-passagedata pid="204" name="Run to the stables" tags="" position="9112,2145" size="100,100">The stables are full of horses that seem like they have been cooped up for quite a while. However, there are still guards at the gates that can prevent the horses from going anywhere. If you intend to let the horses loose, you need to take care of those guards first.
+
+[[Distract them with a noisemaker]]
+[[Take out the guards and risk alerting the others]]</tw-passagedata><tw-passagedata pid="205" name="Distract them with a noisemaker" tags="" position="9021,2376" size="100,100">You move to the side of the entrance away from the gaze of the guards, take out your Noisemaker, push the button and throw it over the wall. As a loud &quot;HAPPY BIRTHDAY&quot; echoes through the area, the guards immediately have a look of shock on their faces as you peek around the corner. They look at each other.
+Guard 1: //Oh no, it&#39;s the Queen&#39;s birthday!//
+Guard 2: //Quickly, off to the general store to buy the finest cheddar cheese wheel!//
+
+However, the guards at the training field have now heard the commotion. You immediately hide inside some hay. The guards notice the missing guards and two of them head into the barracks to report them. The others head back to the training field.
+
+[[Head over to the stables]]
+[[Enter the barracks]]</tw-passagedata><tw-passagedata pid="206" name="Take out the guards and risk alerting the others" tags="" position="9201,2371" size="100,100">Thankfully there is no citizens around to witness your assault on the entrance guards. As they charge at you with their Omni-Pike, you swiftly fire at their SmartFace Masks and disintegrate them. The guards are immediately run away from the barracks.
+
+However, the guards at the training field have now heard the commotion. You immediately hide inside some hay. The guards notice the missing guards and two of them head into the barracks to report them. The others head back to the training field.
+
+[[Head over to the stables]]
+[[Enter the barracks]]</tw-passagedata></tw-storydata>
 <script title="Twine engine code" data-main="harlowe">"use strict";var _slicedToArray=function(){return function(e,t){if(Array.isArray(e))return e;if(Symbol.iterator in Object(e))return function(e,t){var n=[],r=!0,a=!1,i=void 0;try{for(var o,s=e[Symbol.iterator]();!(r=(o=s.next()).done)&&(n.push(o.value),!t||n.length!==t);r=!0);}catch(e){a=!0,i=e}finally{try{!r&&s.return&&s.return()}finally{if(a)throw i}}return n}(e,t);throw new TypeError("Invalid attempt to destructure non-iterable instance")}}(),_typeof="function"==typeof Symbol&&"symbol"==typeof Symbol.iterator?function(e){return typeof e}:function(e){return e&&"function"==typeof Symbol&&e.constructor===Symbol&&e!==Symbol.prototype?"symbol":typeof e};function _defineProperty(e,t,n){return t in e?Object.defineProperty(e,t,{value:n,enumerable:!0,configurable:!0,writable:!0}):e[t]=n,e}function _toConsumableArray(e){if(Array.isArray(e)){for(var t=0,n=Array(e.length);t<e.length;t++)n[t]=e[t];return n}return Array.from(e)}!function(){
 /**
  * @license almond 0.3.3 Copyright jQuery Foundation and other contributors.
